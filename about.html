@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJSC NAIL LOUNGE</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a name="HOME"></a>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navlinks">
+        <i class="times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+            <li><a href="BOOKING.HTML" class="BOOKONLINE">BOOK ONLINE</a></li>
+            <button class="LOGIN" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+        <div id="id01" class="modal">
+              
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="logo.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input class="text" type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input class="password" type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+            </ul>
+    </nav>
+
+    <section class="About">
+        <a name="ABOUT"></a>
+            <h1>About Us</h1>
+            <p>The newest nail care trends are introduced by AJSC Lounge, which advances from the standard polish and gel manicure to Nail Gel Art, which gives customers more options for choosing nail art designs from a wide variety of imported nail parts and accessories that would be appropriate for any contemporary Filipina woman.</p>
+            
+            <div class="row">
+                <div class="about-col">
+                    <h3>Purpose</h3>
+                    <h4>For a variety of reasons, nail care is essential. One benefit is that it keeps your hands and feet looking good, which enhances their appearance.<h4>
+                </div>
+                <div class="about-col">
+                    <h3>Function</h3>
+                    <h4>AJSC Lounge helps you to maintain healthy nails by removing any dead skin cells or debris, clipping and shaping your nails, and applying a coat of polish or nail hardener. </h4>
+                </div>
+                <div class="about-col">
+                <h3>Services</h3>
+                <h4>We offer a lot of services that can maintain your nails. We design based on your own desires.</h4>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+			<h4 class="credits">
+				<span>EST. 2022</span>
+				<span>AJSC NAIL LOUNGE</span>
+				<span><i class="fa fa-facebook-official" style="color:#000000;" aria-hidden="true"></i><a href="https://www.facebook.com/itsmeee.staciejoyz">ALLIYAH SUMAGAYSAY</a></span>
+			</h4>
+		</footer>
+	
+</body>
+</html>
