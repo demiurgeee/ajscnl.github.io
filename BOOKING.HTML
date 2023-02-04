@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJSC NAIL LOUNGE</title>
+    <link rel="stylesheet" href="book.css">
+    <script src="book.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+    <nav>
+        <a name="HOME"></a>
+        <a href="index.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navlinks">
+        <i class="times" onclick="hideMenu()"></i>
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+            <li><button class="BOOKONLINE">BOOK ONLINE</button></li>
+            <button class="LOGIN" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    
+        <div id="id01" class="modal">
+              
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <img src="logo.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input class="text" type="text" placeholder="Enter Username" name="uname" required>
+            
+                  <label for="psw"><b>Password</b></label>
+                  <input class="password" type="password" placeholder="Enter Password" name="psw" required>
+                    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+            </ul>
+    </nav>
+    
+    <div class="map">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2121.4426918006675!2d121.09854450533473!3d14.659454049241674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9bf697d80d3%3A0x1164a1121ed8c912!2sDONYA%20JUANA%20COMPOUND!5e0!3m2!1sen!2sph!4v1675270427044!5m2!1sen!2sph" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+    
+    </div>
+
+    <button class="Booknow" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">BOOK NOW</button>
+
+    <div id="id02" class="modals">
+          
+        <form class="modal-contents animates" action="/action_page.php" method="post">
+            <div class="imgcontainers">
+                <span onclick="document.getElementById('id02').style.display='none'" class="closes" title="Close Modal">&times;</span>
+                <img src="logo.png" alt="Avatar" class="avatars">
+            </div>
+            <div class="containers">
+                <label for="uname"><b>Date</b></label>
+                <input class="date" type="date" placeholder="Enter Date" name="uname" required>
+          
+                <label for="psw"><b>Time</b></label>
+                <input class="time" type="time" placeholder="Enter Time" name="psw" required>
+                  
+                <button type="submits">BOOK NOW</button>
+            </div>
+            <div class="containers" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbt">Cancel Booking</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h4 class="credits">
+            <span>EST. 2022</span>
+            <span>AJSC NAIL LOUNGE</span>
+            <span><i class="fa fa-facebook-official" style="color:#000000;" aria-hidden="true"></i><a href="https://www.facebook.com/itsmeee.staciejoyz">ALLIYAH SUMAGAYSAY</a></span>
+        </h4>
+    </footer>
+
+</body>
+</html>
